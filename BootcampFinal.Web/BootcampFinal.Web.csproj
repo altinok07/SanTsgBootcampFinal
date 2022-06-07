@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.25">
       <PrivateAssets>all</PrivateAssets>
@@ -17,6 +18,7 @@
     <ProjectReference Include="..\BootcampFinal.Application\BootcampFinal.Application.csproj" />
     <ProjectReference Include="..\BootcampFinal.Data\BootcampFinal.Data.csproj" />
     <ProjectReference Include="..\BootcampFinal.Domain\BootcampFinal.Domain.csproj" />
+    <ProjectReference Include="..\BootcampFinal.Shared\BootcampFinal.Shared.csproj" />
   </ItemGroup>
 
 </Project>

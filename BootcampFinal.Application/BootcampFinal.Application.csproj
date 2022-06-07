@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.2.0" />
+    <PackageReference Include="MimeKit" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BootcampFinal.Data\BootcampFinal.Data.csproj" />
+    <ProjectReference Include="..\BootcampFinal.Shared\BootcampFinal.Shared.csproj" />
   </ItemGroup>
 
 </Project>

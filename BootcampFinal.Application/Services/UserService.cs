@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BootcampFinal.Application.Interfaces;
+using BootcampFinal.Application.Models;
 using BootcampFinal.Domain.Users;
 
 namespace BootcampFinal.Application.Services
@@ -12,10 +13,12 @@ namespace BootcampFinal.Application.Services
     public class UserService : IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IEmailService _emailService;
 
-        public UserService(IUnitOfWork unitOfWork)
+        public UserService(IUnitOfWork unitOfWork, IEmailService emailService)
         {
             _unitOfWork = unitOfWork;
+            _emailService = emailService;
         }
 
 
@@ -56,6 +59,15 @@ namespace BootcampFinal.Application.Services
         public void Add(User user)
         {
             _unitOfWork.Users.Add(user);
+
+            MailRequest mail = new MailRequest()
+            {
+                Body = "Kaydiniz basariyla alinmistir",
+                Subject = "BootcampFinal Kayit Onayi",
+                ToEmail = user.Email
+            };
+
+            _emailService.SendEmailAsync(mail);
             _unitOfWork.Complete();
         }
 

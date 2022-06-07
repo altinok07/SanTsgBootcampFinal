@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampFinal.Domain", "BootcampFinal.Domain\BootcampFinal.Domain.csproj", "{50A807B3-5E84-42E2-94C6-0B8815E8235D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootcampFinal.Domain", "BootcampFinal.Domain\BootcampFinal.Domain.csproj", "{50A807B3-5E84-42E2-94C6-0B8815E8235D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampFinal.Web", "BootcampFinal.Web\BootcampFinal.Web.csproj", "{212F9377-5076-4D23-B891-1895C1288E6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootcampFinal.Web", "BootcampFinal.Web\BootcampFinal.Web.csproj", "{212F9377-5076-4D23-B891-1895C1288E6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampFinal.Data", "BootcampFinal.Data\BootcampFinal.Data.csproj", "{C5C4B4A2-051F-4E42-BE17-584AC5E2447A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootcampFinal.Data", "BootcampFinal.Data\BootcampFinal.Data.csproj", "{C5C4B4A2-051F-4E42-BE17-584AC5E2447A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampFinal.Application", "BootcampFinal.Application\BootcampFinal.Application.csproj", "{4DE9053F-936B-4D9C-8FA4-B7855AC572D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootcampFinal.Application", "BootcampFinal.Application\BootcampFinal.Application.csproj", "{4DE9053F-936B-4D9C-8FA4-B7855AC572D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampFinal.Shared", "BootcampFinal.Shared\BootcampFinal.Shared.csproj", "{BCE5A4C3-528A-414C-8C68-DEA6C168F805}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4DE9053F-936B-4D9C-8FA4-B7855AC572D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DE9053F-936B-4D9C-8FA4-B7855AC572D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DE9053F-936B-4D9C-8FA4-B7855AC572D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE5A4C3-528A-414C-8C68-DEA6C168F805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE5A4C3-528A-414C-8C68-DEA6C168F805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE5A4C3-528A-414C-8C68-DEA6C168F805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE5A4C3-528A-414C-8C68-DEA6C168F805}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

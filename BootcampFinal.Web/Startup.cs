@@ -15,6 +15,7 @@ using BootcampFinal.Data.Repositories;
 using BootcampFinal.Data.Repositories.Interfaces;
 using BootcampFinal.Data.UnitOfWork;
 using BootcampFinal.Data.UnitOfWork.Interfaces;
+using BootcampFinal.Shared.SettingsModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace BootcampFinal.Web
@@ -34,6 +35,10 @@ namespace BootcampFinal.Web
             services.AddControllersWithViews();
             services.AddDbContext<BootcampFinalDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+
+            services.AddScoped<IEmailService, EmailService>();
 
 
             services.AddTransient<IUnitOfWork,UnitOfWork>();
