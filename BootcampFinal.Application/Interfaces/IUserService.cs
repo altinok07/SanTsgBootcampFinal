@@ -10,5 +10,12 @@ namespace BootcampFinal.Application.Interfaces
     {
         void CreateUser(User user);
         List<User> GetAllUser();
+        User GetById(int id);
+        void Delete(User user);
+        void Update(User user);
+        User GetByEmail(string email);
+        void Add(User user);
+        void UpdateIsActive(User user);
+
     }
 }

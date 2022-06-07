@@ -1,0 +1,44 @@
+﻿@model BootcampFinal.Domain.Users.User
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+
+<form method="post" asp-action="Update">
+
+    <h1 Kullanıcıyı Güncelle></h1>
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input class="form-control" asp-for="Name"></input>
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Surname"></label>
+        <input class="form-control" asp-for="Surname"></input>
+        <span asp-validation-for="Surname"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input class="form-control" asp-for="Email"></input>
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+    <button><a asp-controller="User" asp-action="Index"> Listeye Geri Dön</a></button>
+</form>
+
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+}

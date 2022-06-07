@@ -21,8 +21,8 @@ namespace BootcampFinal.Application.Services
 
         public void CreateUser(User user)
         {
-           _unitOfWork.Users.Add(user);
-           _unitOfWork.Complete();
+            _unitOfWork.Users.Add(user);
+            _unitOfWork.Complete();
         }
 
         public List<User> GetAllUser()
@@ -30,5 +30,47 @@ namespace BootcampFinal.Application.Services
             return _unitOfWork.Users.GetAll().ToList();
 
         }
+
+        public User GetById(int id)
+        {
+            return _unitOfWork.Users.Get(user => user.Id == id);
+        }
+
+        public void Delete(User user)
+        {
+            _unitOfWork.Users.Delete(user);
+            _unitOfWork.Complete();
+        }
+
+        public void Update(User user)
+        {
+            _unitOfWork.Users.Update(user);
+            _unitOfWork.Complete();
+        }
+
+        public User GetByEmail(string email)
+        {
+            return _unitOfWork.Users.Get(user => user.Email == email);
+        }
+
+        public void Add(User user)
+        {
+            _unitOfWork.Users.Add(user);
+            _unitOfWork.Complete();
+        }
+
+        public void UpdateIsActive(User user)
+        {
+            if (user.IsActive == true)
+            {
+                user.IsActive = false;
+            }
+            else
+            {
+                user.IsActive = true;
+            }
+            _unitOfWork.Complete();
+        }
+
     }
 }

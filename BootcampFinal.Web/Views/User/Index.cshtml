@@ -1,0 +1,48 @@
+﻿@model List<BootcampFinal.Domain.Users.User>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h1>Kullanıcılar</h1>
+<hr />
+
+<button> <a asp-controller="User" asp-action="Create">Kullanıcı Ekle</a></button>
+<br >
+<br >
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>#</th>
+            <th>Kullanıcı Adı</th>
+            <th>Kullanıcı Soyadı</th>
+            <th>E-Mail Adresi</th>
+            <th>Kayıt Tarihi</th>
+            <th>Aktiflik Durumu</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <th scope="row"></th>
+                <td>@user.Name</td>
+                <td>@user.Surname</td>
+                <td>@user.Email</td>
+                <td>@user.RegisterTime.Date.ToString("dd-MM-yyyy")</td>
+                <td>@user.IsActive</td>
+                <td>
+                    <button><a asp-controller="User" asp-action="Update" asp-route-id="@user.Id">Güncelle</a></button>
+                    <button><a asp-controller="User" asp-action="Delete" asp-route-id="@user.Id">Sil</a></button>
+                    <button><a asp-controller="User" asp-action="UpdateStatus" asp-route-id="@user.Id">Durum Güncelle</a></button>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

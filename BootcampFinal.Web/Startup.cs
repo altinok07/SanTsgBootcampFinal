@@ -8,9 +8,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BootcampFinal.Application.Interfaces;
+using BootcampFinal.Application.Services;
 using BootcampFinal.Data;
 using BootcampFinal.Data.Repositories;
 using BootcampFinal.Data.Repositories.Interfaces;
+using BootcampFinal.Data.UnitOfWork;
+using BootcampFinal.Data.UnitOfWork.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace BootcampFinal.Web
@@ -31,7 +35,9 @@ namespace BootcampFinal.Web
             services.AddDbContext<BootcampFinalDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IUserRepository,UserRepository>();
+
+            services.AddTransient<IUnitOfWork,UnitOfWork>();
+            services.AddTransient<IUserService,UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

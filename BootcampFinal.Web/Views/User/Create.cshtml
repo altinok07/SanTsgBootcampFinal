@@ -1,0 +1,57 @@
+﻿@model BootcampFinal.Domain.Users.User
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form method="post" asp-action="Create">
+
+    <h1> Kullanıcı Ekle</h1>
+
+    <div asp-validation-summary="All"></div>
+
+
+    <div class="form-group">
+        <label asp-for="Name">Kullanıcı Adı</label>
+        <input class="form-control" asp-for="Name">
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Surname">Kullanıcı Soyadı</label>
+        <input class="form-control" asp-for="Surname">
+        <span asp-validation-for="Surname"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email">E-Mail Adresi</label>
+        <input class="form-control" asp-for="Email">
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password">Parola</label>
+        <input class="form-control" asp-for="Password">
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    @*   <div class="form-group">
+    <label asp-for="RegisterTime"></label>
+    <input class="form-control" asp-for="RegisterTime">
+    <span asp-validation-for="RegisterTime"></span>
+    </div>*@
+
+    <div class="form-group">
+        <label asp-for="IsActive">Aktif</label>
+        <input asp-for="IsActive" name="IsActive">
+        <span asp-validation-for="IsActive"></span>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Kullanıcıyı Ekle</button>
+    <button><a asp-controller="User" asp-action="Index"> Listeye Geri Dön</a></button>
+</form>
