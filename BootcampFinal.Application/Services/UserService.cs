@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using BootcampFinal.Application.Interfaces;
 using BootcampFinal.Application.Models;
 using BootcampFinal.Domain.Users;
+using Microsoft.Extensions.Logging;
 
 namespace BootcampFinal.Application.Services
 {
@@ -14,11 +15,13 @@ namespace BootcampFinal.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IEmailService _emailService;
+        private readonly ILogger<UserService> _logger;
 
-        public UserService(IUnitOfWork unitOfWork, IEmailService emailService)
+        public UserService(IUnitOfWork unitOfWork, IEmailService emailService, ILogger<UserService> logger)
         {
             _unitOfWork = unitOfWork;
             _emailService = emailService;
+            _logger = logger;
         }
 
 
@@ -69,6 +72,7 @@ namespace BootcampFinal.Application.Services
 
             _emailService.SendEmailAsync(mail);
             _unitOfWork.Complete();
+            _logger.LogInformation("Yeni Kullanıcı Eklendi. Kullanıcı {@user}",user);
         }
 
         public void UpdateIsActive(User user)
