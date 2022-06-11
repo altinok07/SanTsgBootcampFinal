@@ -37,12 +37,16 @@ namespace BootcampFinal.Web
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+            services.Configure<TourvisioApiSettings>(Configuration.GetSection("TourvisioApiSettings"));
 
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<ITourvisioApiService, TourvisioApiService>();
 
 
             services.AddTransient<IUnitOfWork,UnitOfWork>();
             services.AddTransient<IUserService,UserService>();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +66,8 @@ namespace BootcampFinal.Web
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 
