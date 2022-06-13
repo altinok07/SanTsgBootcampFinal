@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BootcampFinal.Domain.HotelDetails;
 using BootcampFinal.Domain.HotelProducts;
+using Hotel = BootcampFinal.Domain.HotelDetails.Hotel;
 
 namespace BootcampFinal.Application.Interfaces
 {
@@ -9,5 +11,8 @@ namespace BootcampFinal.Application.Interfaces
     {
         string GetAccessToken();
         List<HotelProduct> GetHotels(string city, string token);
+
+        Hotel GetHotelDetails(int id, string token);
     }
 }
+    

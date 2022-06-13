@@ -4,11 +4,13 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using BootcampFinal.Application.Interfaces;
+using BootcampFinal.Domain.HotelDetails;
 using BootcampFinal.Domain.HotelProducts;
 using BootcampFinal.Domain.JWT;
 using BootcampFinal.Shared.SettingsModels;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using Hotel = BootcampFinal.Domain.HotelDetails.Hotel;
 
 namespace BootcampFinal.Application.Services
 {
@@ -80,6 +82,34 @@ namespace BootcampFinal.Application.Services
 
             return hotels;
 
+        }
+
+        public Hotel GetHotelDetails(int id, string token)
+        {
+            string baseUrl = _settings.ServiceAddress;
+
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(baseUrl);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var contentType = new MediaTypeWithQualityHeaderValue("application/json");
+            client.DefaultRequestHeaders.Accept.Add(contentType);
+
+            HotelDetailsRequest hotelDetailsRequest = new HotelDetailsRequest
+            {
+                ProductType = 2,
+                OwnerProvider = 2,
+                Product = id,
+                Culture = "en-US"
+            };
+
+            string stringData = JsonConvert.SerializeObject(hotelDetailsRequest);
+            var contentData = new StringContent(stringData, System.Text.Encoding.UTF8, "application/json");
+            HttpResponseMessage response = client.PostAsync("/api/productservice/getproductInfo", contentData).Result;
+            string hotelDetailResult = response.Content.ReadAsStringAsync().Result;
+            Domain.HotelDetails.Root myDeserializedClass = JsonConvert.DeserializeObject<Domain.HotelDetails.Root>(hotelDetailResult);
+
+
+            return myDeserializedClass.body.hotel;
         }
     }
 }
