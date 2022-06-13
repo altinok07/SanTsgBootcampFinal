@@ -1,0 +1,1298 @@
+2022-06-13 11:46:52.380 +03:00 [INF] Starting Web Host
+2022-06-13 11:46:54.634 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 11:46:55.084 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 11:46:55.084 +03:00 [INF] Hosting environment: Development
+2022-06-13 11:46:55.092 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 11:46:55.127 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 11:46:55.182 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 11:46:55.246 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 11:46:55.292 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 11:46:56.367 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 11:46:56.541 +03:00 [INF] Executed ViewResult - view Index executed in 176.1791ms.
+2022-06-13 11:46:56.545 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 1251.5241ms
+2022-06-13 11:46:56.545 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 11:46:56.578 +03:00 [INF] Request finished in 1453.9252ms 200 text/html; charset=utf-8
+2022-06-13 11:46:56.592 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/lib/bootstrap/dist/css/bootstrap.min.css  
+2022-06-13 11:46:56.592 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2022-06-13 11:46:56.592 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 11:46:56.592 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/lib/jquery/dist/jquery.min.js  
+2022-06-13 11:46:56.593 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+2022-06-13 11:46:56.592 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/css/site.css  
+2022-06-13 11:46:56.607 +03:00 [INF] Request finished in 15.0903ms 200 application/javascript; charset=utf-8
+2022-06-13 11:46:56.615 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 11:46:56.616 +03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2022-06-13 11:46:56.616 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2022-06-13 11:46:56.616 +03:00 [INF] The file /js/site.js was not modified
+2022-06-13 11:46:56.616 +03:00 [INF] The file /css/site.css was not modified
+2022-06-13 11:46:56.616 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2022-06-13 11:46:56.617 +03:00 [INF] Request finished in 24.8304ms 304 application/javascript
+2022-06-13 11:46:56.617 +03:00 [INF] Request finished in 27.5222ms 304 application/javascript
+2022-06-13 11:46:56.617 +03:00 [INF] Request finished in 25.2891ms 304 text/css
+2022-06-13 11:46:56.617 +03:00 [INF] Request finished in 27.5361ms 304 text/css
+2022-06-13 11:46:56.617 +03:00 [INF] Request finished in 27.5246ms 304 application/javascript
+2022-06-13 11:46:56.647 +03:00 [INF] Request finished in 32.6301ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:04:05.239 +03:00 [INF] Starting Web Host
+2022-06-13 12:04:06.286 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:04:06.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:04:06.481 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:04:06.481 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:04:06.506 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:04:06.551 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:04:06.588 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:04:06.616 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:04:07.412 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:04:07.614 +03:00 [INF] Executed ViewResult - view Index executed in 205.5795ms.
+2022-06-13 12:04:07.618 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 1001.1353ms
+2022-06-13 12:04:07.619 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:04:07.659 +03:00 [INF] Request finished in 1154.0799ms 200 text/html; charset=utf-8
+2022-06-13 12:04:07.751 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:04:07.751 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:04:07.756 +03:00 [INF] Request finished in 4.0402ms 200 application/javascript; charset=utf-8
+2022-06-13 12:04:07.764 +03:00 [INF] Request finished in 12.8632ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:04:17.578 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/  
+2022-06-13 12:04:17.586 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:04:17.587 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Index (BootcampFinal.Web)'
+2022-06-13 12:04:17.590 +03:00 [INF] Route matched with {action = "Index", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:04:17.593 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:04:32.550 +03:00 [INF] Starting Web Host
+2022-06-13 12:04:33.718 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:04:33.964 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:04:33.964 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:04:33.965 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:04:33.997 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:04:34.046 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:04:34.084 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:04:34.111 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:04:34.795 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:04:34.960 +03:00 [INF] Executed ViewResult - view Index executed in 166.0458ms.
+2022-06-13 12:04:34.965 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 853.2892ms
+2022-06-13 12:04:34.966 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:04:35.012 +03:00 [INF] Request finished in 1016.4301ms 200 text/html; charset=utf-8
+2022-06-13 12:04:35.153 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:04:35.153 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:04:35.158 +03:00 [INF] Request finished in 5.4593ms 200 application/javascript; charset=utf-8
+2022-06-13 12:04:35.174 +03:00 [INF] Request finished in 21.1577ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:04:41.359 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:04:41.365 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:04:41.366 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:04:41.367 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:04:41.368 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:04:41.400 +03:00 [INF] Executed ViewResult - view Search executed in 31.947ms.
+2022-06-13 12:04:41.400 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 32.561ms
+2022-06-13 12:04:41.400 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:04:41.402 +03:00 [INF] Request finished in 43.7825ms 200 text/html; charset=utf-8
+2022-06-13 12:04:41.421 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:04:41.422 +03:00 [INF] Request finished in 0.9741ms 200 application/javascript; charset=utf-8
+2022-06-13 12:04:41.438 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:04:41.451 +03:00 [INF] Request finished in 13.6746ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:04:46.135 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:04:46.142 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:04:46.143 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:04:46.151 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:05:43.851 +03:00 [INF] Starting Web Host
+2022-06-13 12:05:44.791 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:05:44.983 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:05:44.984 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:05:44.984 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:05:45.011 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:05:45.056 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:05:45.085 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:05:45.113 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:05:45.769 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:05:45.925 +03:00 [INF] Executed ViewResult - view Index executed in 158.379ms.
+2022-06-13 12:05:45.931 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 817.777ms
+2022-06-13 12:05:45.932 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:05:45.961 +03:00 [INF] Request finished in 952.0826ms 200 text/html; charset=utf-8
+2022-06-13 12:05:45.980 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:05:45.996 +03:00 [INF] Request finished in 16.1647ms 200 application/javascript; charset=utf-8
+2022-06-13 12:05:46.002 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:05:46.017 +03:00 [INF] Request finished in 15.0912ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:05:50.967 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:05:50.972 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:05:50.975 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:05:50.977 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:05:50.978 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:05:51.016 +03:00 [INF] Executed ViewResult - view Search executed in 37.6408ms.
+2022-06-13 12:05:51.016 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 38.5579ms
+2022-06-13 12:05:51.016 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:05:51.017 +03:00 [INF] Request finished in 51.2357ms 200 text/html; charset=utf-8
+2022-06-13 12:05:51.039 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:05:51.039 +03:00 [INF] Request finished in 1.3824ms 200 application/javascript; charset=utf-8
+2022-06-13 12:05:51.050 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:05:51.067 +03:00 [INF] Request finished in 17.0476ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:05:53.906 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:05:53.912 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:05:53.912 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:05:53.920 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:06:39.863 +03:00 [INF] Starting Web Host
+2022-06-13 12:06:40.862 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:06:41.110 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:06:41.111 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:06:41.111 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:06:41.137 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:06:41.177 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:06:41.207 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:06:41.236 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:06:41.885 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:06:42.049 +03:00 [INF] Executed ViewResult - view Index executed in 164.8505ms.
+2022-06-13 12:06:42.055 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 818.1477ms
+2022-06-13 12:06:42.056 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:06:42.084 +03:00 [INF] Request finished in 950.1105ms 200 text/html; charset=utf-8
+2022-06-13 12:06:42.219 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:06:42.219 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:06:42.225 +03:00 [INF] Request finished in 7.0143ms 200 application/javascript; charset=utf-8
+2022-06-13 12:06:42.252 +03:00 [INF] Request finished in 33.6639ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:06:45.752 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:06:45.757 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:06:45.759 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:06:45.761 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:06:45.763 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:06:45.796 +03:00 [INF] Executed ViewResult - view Search executed in 33.5396ms.
+2022-06-13 12:06:45.796 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 34.2316ms
+2022-06-13 12:06:45.796 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:06:45.797 +03:00 [INF] Request finished in 45.2052ms 200 text/html; charset=utf-8
+2022-06-13 12:06:45.828 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:06:45.828 +03:00 [INF] Request finished in 1.0217ms 200 application/javascript; charset=utf-8
+2022-06-13 12:06:45.838 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:06:45.846 +03:00 [INF] Request finished in 8.7829ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:06:48.759 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:06:48.766 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:06:48.767 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:06:48.779 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:07:02.495 +03:00 [INF] Executing RedirectResult, redirecting to /Hotel.
+2022-06-13 12:07:02.496 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 13716.4651ms
+2022-06-13 12:07:02.496 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:07:02.501 +03:00 [INF] Request finished in 13742.1932ms 302 
+2022-06-13 12:07:02.504 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel  
+2022-06-13 12:07:02.507 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:07:02.507 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Index (BootcampFinal.Web)'
+2022-06-13 12:07:02.509 +03:00 [INF] Route matched with {action = "Index", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:07:02.510 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:07:06.209 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Index (BootcampFinal.Web) in 3700.5168ms
+2022-06-13 12:07:06.210 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Index (BootcampFinal.Web)'
+2022-06-13 12:07:06.210 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_Hotel_Index.ExecuteAsync() in C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web\Views\Hotel\Index.cshtml:line 24
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-13 12:07:06.253 +03:00 [INF] Request finished in 3748.7938ms 500 text/html; charset=utf-8
+2022-06-13 12:07:06.266 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:07:06.266 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:07:06.267 +03:00 [INF] Request finished in 0.4459ms 200 application/javascript; charset=utf-8
+2022-06-13 12:07:06.276 +03:00 [INF] Request finished in 9.8751ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:07:07.317 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel  
+2022-06-13 12:07:07.320 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:07:07.321 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Index (BootcampFinal.Web)'
+2022-06-13 12:07:07.321 +03:00 [INF] Route matched with {action = "Index", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:07:07.322 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:08:01.815 +03:00 [INF] Starting Web Host
+2022-06-13 12:08:02.748 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:08:03.022 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:08:03.023 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:08:03.023 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:08:03.049 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:08:03.090 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:08:03.120 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:08:03.148 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:08:03.808 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:08:03.970 +03:00 [INF] Executed ViewResult - view Index executed in 162.8275ms.
+2022-06-13 12:08:03.975 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 826.2543ms
+2022-06-13 12:08:03.976 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:08:04.001 +03:00 [INF] Request finished in 954.0883ms 200 text/html; charset=utf-8
+2022-06-13 12:08:04.100 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:08:04.102 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:08:04.111 +03:00 [INF] Request finished in 8.1904ms 200 application/javascript; charset=utf-8
+2022-06-13 12:08:04.117 +03:00 [INF] Request finished in 16.9691ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:08:04.188 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/favicon.ico  
+2022-06-13 12:08:04.193 +03:00 [INF] The file /favicon.ico was not modified
+2022-06-13 12:08:04.194 +03:00 [INF] Request finished in 6.7055ms 304 image/x-icon
+2022-06-13 12:08:07.298 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:08:07.303 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:08:07.303 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:08:07.307 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:08:07.309 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:08:07.343 +03:00 [INF] Executed ViewResult - view Search executed in 35.1685ms.
+2022-06-13 12:08:07.344 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 35.9615ms
+2022-06-13 12:08:07.344 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:08:07.345 +03:00 [INF] Request finished in 46.9923ms 200 text/html; charset=utf-8
+2022-06-13 12:08:07.364 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:08:07.365 +03:00 [INF] Request finished in 1.5748ms 200 application/javascript; charset=utf-8
+2022-06-13 12:08:07.373 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:08:07.384 +03:00 [INF] Request finished in 9.9461ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:08:11.398 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:08:11.401 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:08:11.403 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:08:11.411 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:08:12.221 +03:00 [INF] Executing RedirectResult, redirecting to /Hotel.
+2022-06-13 12:08:12.222 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 810.4008ms
+2022-06-13 12:08:12.222 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:08:12.223 +03:00 [INF] Request finished in 825.8383ms 302 
+2022-06-13 12:08:12.227 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel  
+2022-06-13 12:08:12.228 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:08:12.229 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Index (BootcampFinal.Web)'
+2022-06-13 12:08:12.230 +03:00 [INF] Route matched with {action = "Index", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:08:12.231 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:13:03.242 +03:00 [INF] Starting Web Host
+2022-06-13 12:13:04.383 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:13:04.760 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:13:04.765 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:13:04.765 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:13:04.790 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:13:04.837 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:13:04.868 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:13:04.897 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:13:05.662 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:13:05.831 +03:00 [INF] Executed ViewResult - view Index executed in 174.2178ms.
+2022-06-13 12:13:05.837 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 938.7587ms
+2022-06-13 12:13:05.837 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:13:05.863 +03:00 [INF] Request finished in 1074.4493ms 200 text/html; charset=utf-8
+2022-06-13 12:13:05.908 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:13:05.914 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:13:05.922 +03:00 [INF] Request finished in 8.3195ms 200 application/javascript; charset=utf-8
+2022-06-13 12:13:05.927 +03:00 [INF] Request finished in 18.4939ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:13:09.254 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:13:09.264 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:13:09.265 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:13:09.266 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:13:09.267 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:13:09.296 +03:00 [INF] Executed ViewResult - view Search executed in 28.8157ms.
+2022-06-13 12:13:09.296 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 29.4498ms
+2022-06-13 12:13:09.296 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:13:09.297 +03:00 [INF] Request finished in 43.4854ms 200 text/html; charset=utf-8
+2022-06-13 12:13:09.309 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:13:09.309 +03:00 [INF] Request finished in 0.4465ms 200 application/javascript; charset=utf-8
+2022-06-13 12:13:09.310 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:13:09.315 +03:00 [INF] Request finished in 4.4701ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:13:09.362 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:13:09.366 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:13:09.367 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:13:09.368 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:13:09.368 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:13:09.372 +03:00 [INF] Executed ViewResult - view Search executed in 4.2102ms.
+2022-06-13 12:13:09.373 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 5.1595ms
+2022-06-13 12:13:09.373 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:13:09.376 +03:00 [INF] Request finished in 13.8675ms 200 text/html; charset=utf-8
+2022-06-13 12:13:09.401 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:13:09.403 +03:00 [INF] Request finished in 1.5923ms 200 application/javascript; charset=utf-8
+2022-06-13 12:13:11.854 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:13:11.857 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:13:11.859 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:13:11.871 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:13:12.725 +03:00 [INF] Executing RedirectResult, redirecting to /Hotel?Capacity=64&Count=54.
+2022-06-13 12:13:12.726 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 855.096ms
+2022-06-13 12:13:12.726 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:13:12.730 +03:00 [INF] Request finished in 876.9405ms 302 
+2022-06-13 12:13:12.733 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel?Capacity=64&Count=54  
+2022-06-13 12:13:12.734 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:13:12.734 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Index (BootcampFinal.Web)'
+2022-06-13 12:13:12.735 +03:00 [INF] Route matched with {action = "Index", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:13:12.736 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:15:05.468 +03:00 [INF] Starting Web Host
+2022-06-13 12:15:06.532 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:15:06.751 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:15:06.751 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:15:06.751 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:15:06.781 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:15:06.836 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:15:06.872 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:15:06.904 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:15:07.703 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:15:07.846 +03:00 [INF] Executed ViewResult - view Index executed in 147.6784ms.
+2022-06-13 12:15:07.852 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 948.1449ms
+2022-06-13 12:15:07.853 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:15:07.887 +03:00 [INF] Request finished in 1107.9884ms 200 text/html; charset=utf-8
+2022-06-13 12:15:07.986 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:15:07.986 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:15:07.989 +03:00 [INF] Request finished in 3.6201ms 200 application/javascript; charset=utf-8
+2022-06-13 12:15:07.999 +03:00 [INF] Request finished in 13.6725ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:15:11.079 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:15:11.090 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:15:11.093 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:15:11.096 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:15:11.099 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:15:11.135 +03:00 [INF] Executed ViewResult - view Search executed in 37.1398ms.
+2022-06-13 12:15:11.136 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 39.0546ms
+2022-06-13 12:15:11.136 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:15:11.137 +03:00 [INF] Request finished in 58.6986ms 200 text/html; charset=utf-8
+2022-06-13 12:15:11.160 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:15:11.161 +03:00 [INF] Request finished in 0.9982ms 200 application/javascript; charset=utf-8
+2022-06-13 12:15:11.176 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:15:11.191 +03:00 [INF] Request finished in 15.5898ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:15:13.166 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:15:13.170 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:15:13.171 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:15:13.183 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:15:14.046 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:15:14.053 +03:00 [INF] Executed ViewResult - view Index executed in 7.8839ms.
+2022-06-13 12:15:14.053 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 870.5333ms
+2022-06-13 12:15:14.054 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:15:14.056 +03:00 [INF] Request finished in 890.1578ms 200 text/html; charset=utf-8
+2022-06-13 12:15:14.074 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:15:14.075 +03:00 [INF] Request finished in 0.6788ms 200 application/javascript; charset=utf-8
+2022-06-13 12:15:14.080 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:15:14.089 +03:00 [INF] Request finished in 8.9843ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:16:14.137 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:16:14.144 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:16:14.145 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:14.145 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:16:14.146 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:16:14.171 +03:00 [INF] Executed ViewResult - view Search executed in 25.1324ms.
+2022-06-13 12:16:14.172 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 25.9114ms
+2022-06-13 12:16:14.172 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:14.173 +03:00 [INF] Request finished in 36.5708ms 200 text/html; charset=utf-8
+2022-06-13 12:16:14.190 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:16:14.191 +03:00 [INF] Request finished in 0.8254ms 200 application/javascript; charset=utf-8
+2022-06-13 12:16:14.227 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:16:14.248 +03:00 [INF] Request finished in 21.3006ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:16:21.839 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:16:21.843 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:16:21.845 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:21.845 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:16:22.633 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:16:22.643 +03:00 [INF] Executed ViewResult - view Index executed in 10.2608ms.
+2022-06-13 12:16:22.643 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 797.9471ms
+2022-06-13 12:16:22.643 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:22.645 +03:00 [INF] Request finished in 805.4483ms 200 text/html; charset=utf-8
+2022-06-13 12:16:22.662 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:16:22.663 +03:00 [INF] Request finished in 0.8245ms 200 application/javascript; charset=utf-8
+2022-06-13 12:16:22.669 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:16:22.676 +03:00 [INF] Request finished in 6.7335ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:16:50.789 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:16:50.791 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:16:50.792 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:50.793 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:16:50.793 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:16:50.807 +03:00 [INF] Executed ViewResult - view Search executed in 13.9628ms.
+2022-06-13 12:16:50.808 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 14.6539ms
+2022-06-13 12:16:50.808 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:50.811 +03:00 [INF] Request finished in 22.2125ms 200 text/html; charset=utf-8
+2022-06-13 12:16:50.830 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:16:50.830 +03:00 [INF] Request finished in 0.6338ms 200 application/javascript; charset=utf-8
+2022-06-13 12:16:53.614 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:16:53.617 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:16:53.618 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:53.619 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:16:54.394 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:16:54.399 +03:00 [INF] Executed ViewResult - view Index executed in 5.4637ms.
+2022-06-13 12:16:54.400 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 780.8675ms
+2022-06-13 12:16:54.400 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:54.401 +03:00 [INF] Request finished in 786.9922ms 200 text/html; charset=utf-8
+2022-06-13 12:16:54.415 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:16:54.417 +03:00 [INF] Request finished in 1.7919ms 200 application/javascript; charset=utf-8
+2022-06-13 12:16:54.420 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:16:54.426 +03:00 [INF] Request finished in 5.4343ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:16:57.818 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:16:57.821 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:16:57.822 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:57.823 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:16:57.824 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:16:57.832 +03:00 [INF] Executed ViewResult - view Search executed in 8.4852ms.
+2022-06-13 12:16:57.833 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 9.9247ms
+2022-06-13 12:16:57.833 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:16:57.838 +03:00 [INF] Request finished in 19.7491ms 200 text/html; charset=utf-8
+2022-06-13 12:16:57.863 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:16:57.865 +03:00 [INF] Request finished in 2.0374ms 200 application/javascript; charset=utf-8
+2022-06-13 12:17:00.073 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:17:00.078 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:17:00.079 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:00.080 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:17:00.683 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:17:00.688 +03:00 [INF] Executed ViewResult - view Index executed in 5.5423ms.
+2022-06-13 12:17:00.689 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 608.9454ms
+2022-06-13 12:17:00.689 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:00.690 +03:00 [INF] Request finished in 616.8858ms 200 text/html; charset=utf-8
+2022-06-13 12:17:00.705 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:17:00.706 +03:00 [INF] Request finished in 1.4067ms 200 application/javascript; charset=utf-8
+2022-06-13 12:17:00.715 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:17:00.720 +03:00 [INF] Request finished in 5.1286ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:17:02.258 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:17:02.259 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:17:02.260 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:02.260 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:17:02.261 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:17:02.267 +03:00 [INF] Executed ViewResult - view Search executed in 6.1754ms.
+2022-06-13 12:17:02.267 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 6.7761ms
+2022-06-13 12:17:02.267 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:02.271 +03:00 [INF] Request finished in 12.601ms 200 text/html; charset=utf-8
+2022-06-13 12:17:02.290 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:17:02.293 +03:00 [INF] Request finished in 2.0499ms 200 application/javascript; charset=utf-8
+2022-06-13 12:17:04.308 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 206
+2022-06-13 12:17:04.310 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:17:04.311 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:04.311 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:17:04.911 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:17:04.916 +03:00 [INF] Executed ViewResult - view Index executed in 5.0605ms.
+2022-06-13 12:17:04.916 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 604.75ms
+2022-06-13 12:17:04.916 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:04.917 +03:00 [INF] Request finished in 609.6571ms 200 text/html; charset=utf-8
+2022-06-13 12:17:04.933 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:17:04.935 +03:00 [INF] Request finished in 2.0131ms 200 application/javascript; charset=utf-8
+2022-06-13 12:17:04.940 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:17:04.953 +03:00 [INF] Request finished in 13.0012ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:17:06.089 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:17:06.093 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:17:06.093 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:06.094 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:17:06.095 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:17:06.103 +03:00 [INF] Executed ViewResult - view Search executed in 8.7425ms.
+2022-06-13 12:17:06.104 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 9.7552ms
+2022-06-13 12:17:06.104 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:06.106 +03:00 [INF] Request finished in 16.5431ms 200 text/html; charset=utf-8
+2022-06-13 12:17:06.127 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:17:06.129 +03:00 [INF] Request finished in 1.9715ms 200 application/javascript; charset=utf-8
+2022-06-13 12:17:10.304 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 205
+2022-06-13 12:17:10.306 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:17:10.306 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:10.307 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:17:10.789 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:17:10.800 +03:00 [INF] Executed ViewResult - view Index executed in 10.7097ms.
+2022-06-13 12:17:10.800 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 493.0538ms
+2022-06-13 12:17:10.800 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:10.801 +03:00 [INF] Request finished in 496.9337ms 200 text/html; charset=utf-8
+2022-06-13 12:17:10.815 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:17:10.816 +03:00 [INF] Request finished in 0.9027ms 200 application/javascript; charset=utf-8
+2022-06-13 12:17:10.825 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:17:10.830 +03:00 [INF] Request finished in 4.8162ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:17:12.253 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:17:12.256 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:17:12.256 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:12.257 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:17:12.257 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:17:12.264 +03:00 [INF] Executed ViewResult - view Search executed in 6.2088ms.
+2022-06-13 12:17:12.264 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 7.259ms
+2022-06-13 12:17:12.264 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:12.268 +03:00 [INF] Request finished in 14.8877ms 200 text/html; charset=utf-8
+2022-06-13 12:17:12.288 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:17:12.290 +03:00 [INF] Request finished in 2.0572ms 200 application/javascript; charset=utf-8
+2022-06-13 12:17:13.502 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 205
+2022-06-13 12:17:13.504 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:17:13.505 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:17:13.506 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String, Int32) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:18:53.736 +03:00 [INF] Starting Web Host
+2022-06-13 12:18:54.714 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:18:54.918 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:18:54.919 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:18:54.919 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:18:54.946 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:18:54.993 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:18:55.024 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:18:55.055 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:18:55.731 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:18:55.922 +03:00 [INF] Executed ViewResult - view Index executed in 192.2816ms.
+2022-06-13 12:18:55.932 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 876.3623ms
+2022-06-13 12:18:55.934 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:18:55.973 +03:00 [INF] Request finished in 1029.765ms 200 text/html; charset=utf-8
+2022-06-13 12:18:56.001 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:18:56.012 +03:00 [INF] Request finished in 11.2483ms 200 application/javascript; charset=utf-8
+2022-06-13 12:18:56.018 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:18:56.033 +03:00 [INF] Request finished in 14.8404ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:18:59.670 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:18:59.677 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:18:59.677 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:18:59.679 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:18:59.680 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:18:59.702 +03:00 [INF] Executed ViewResult - view Search executed in 22.1646ms.
+2022-06-13 12:18:59.702 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 22.9515ms
+2022-06-13 12:18:59.702 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:18:59.703 +03:00 [INF] Request finished in 33.593ms 200 text/html; charset=utf-8
+2022-06-13 12:18:59.716 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:18:59.716 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:18:59.716 +03:00 [INF] Request finished in 0.544ms 200 application/javascript; charset=utf-8
+2022-06-13 12:18:59.726 +03:00 [INF] Request finished in 10.5824ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:18:59.783 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:18:59.785 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:18:59.785 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:18:59.785 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:18:59.786 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:18:59.790 +03:00 [INF] Executed ViewResult - view Search executed in 3.9686ms.
+2022-06-13 12:18:59.790 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 4.6259ms
+2022-06-13 12:18:59.790 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:18:59.791 +03:00 [INF] Request finished in 8.3062ms 200 text/html; charset=utf-8
+2022-06-13 12:18:59.811 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:18:59.812 +03:00 [INF] Request finished in 1.2251ms 200 application/javascript; charset=utf-8
+2022-06-13 12:19:05.891 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 196
+2022-06-13 12:19:05.895 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:19:05.896 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:19:05.906 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:19:06.726 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:19:06.736 +03:00 [INF] Executed ViewResult - view Index executed in 10.3997ms.
+2022-06-13 12:19:06.737 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 829.8708ms
+2022-06-13 12:19:06.737 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:19:06.739 +03:00 [INF] Request finished in 848.0424ms 200 text/html; charset=utf-8
+2022-06-13 12:19:06.755 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:19:06.756 +03:00 [INF] Request finished in 0.8436ms 200 application/javascript; charset=utf-8
+2022-06-13 12:19:06.767 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:19:06.778 +03:00 [INF] Request finished in 11.054ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:19:22.916 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:19:22.919 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:19:22.920 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:19:22.921 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:19:22.921 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:19:22.937 +03:00 [INF] Executed ViewResult - view Search executed in 15.9322ms.
+2022-06-13 12:19:22.938 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 16.8443ms
+2022-06-13 12:19:22.938 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:19:22.941 +03:00 [INF] Request finished in 24.6871ms 200 text/html; charset=utf-8
+2022-06-13 12:19:22.957 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:19:22.959 +03:00 [INF] Request finished in 1.9373ms 200 application/javascript; charset=utf-8
+2022-06-13 12:20:10.086 +03:00 [INF] Starting Web Host
+2022-06-13 12:20:11.036 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:20:11.237 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:20:11.237 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:20:11.237 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:20:11.267 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:20:11.311 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:20:11.340 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:20:11.368 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:20:12.147 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:20:12.329 +03:00 [INF] Executed ViewResult - view Index executed in 184.8359ms.
+2022-06-13 12:20:12.335 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 966.8087ms
+2022-06-13 12:20:12.337 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:20:12.362 +03:00 [INF] Request finished in 1096.5757ms 200 text/html; charset=utf-8
+2022-06-13 12:20:12.458 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:20:12.459 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:20:12.462 +03:00 [INF] Request finished in 3.3056ms 200 application/javascript; charset=utf-8
+2022-06-13 12:20:12.472 +03:00 [INF] Request finished in 13.1108ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:20:16.305 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/hotel/search  
+2022-06-13 12:20:16.311 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:20:16.312 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:20:16.314 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:20:16.317 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:20:16.355 +03:00 [INF] Executed ViewResult - view Search executed in 39.2445ms.
+2022-06-13 12:20:16.355 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 40.4625ms
+2022-06-13 12:20:16.356 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:20:16.360 +03:00 [INF] Request finished in 55.085ms 200 text/html; charset=utf-8
+2022-06-13 12:20:16.389 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:20:16.392 +03:00 [INF] Request finished in 2.2346ms 200 application/javascript; charset=utf-8
+2022-06-13 12:20:16.398 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:20:16.409 +03:00 [INF] Request finished in 10.5687ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:20:23.474 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 202
+2022-06-13 12:20:23.478 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:20:23.481 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:20:23.492 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:20:24.248 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:20:24.258 +03:00 [INF] Executed ViewResult - view Index executed in 10.4037ms.
+2022-06-13 12:20:24.258 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 765.4728ms
+2022-06-13 12:20:24.258 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:20:24.261 +03:00 [INF] Request finished in 787.6929ms 200 text/html; charset=utf-8
+2022-06-13 12:20:24.275 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:20:24.276 +03:00 [INF] Request finished in 1.0559ms 200 application/javascript; charset=utf-8
+2022-06-13 12:20:24.286 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:20:24.293 +03:00 [INF] Request finished in 6.8396ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:21:45.491 +03:00 [INF] Starting Web Host
+2022-06-13 12:21:46.539 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:21:46.733 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:21:46.733 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:21:46.733 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:21:46.774 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:21:46.826 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:21:46.858 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:21:46.887 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:21:47.595 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:21:47.752 +03:00 [INF] Executed ViewResult - view Index executed in 158.7544ms.
+2022-06-13 12:21:47.756 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 868.1755ms
+2022-06-13 12:21:47.757 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:21:47.785 +03:00 [INF] Request finished in 1013.8432ms 200 text/html; charset=utf-8
+2022-06-13 12:21:47.904 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:21:47.904 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:21:47.908 +03:00 [INF] Request finished in 4.1352ms 200 application/javascript; charset=utf-8
+2022-06-13 12:21:47.924 +03:00 [INF] Request finished in 19.9972ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:21:49.392 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:21:49.400 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:21:49.403 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:21:49.406 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:21:49.408 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:21:49.438 +03:00 [INF] Executed ViewResult - view Search executed in 31.3334ms.
+2022-06-13 12:21:49.438 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 32.5537ms
+2022-06-13 12:21:49.439 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:21:49.440 +03:00 [INF] Request finished in 48.7736ms 200 text/html; charset=utf-8
+2022-06-13 12:21:49.455 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:21:49.457 +03:00 [INF] Request finished in 1.6477ms 200 application/javascript; charset=utf-8
+2022-06-13 12:21:49.465 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:21:49.472 +03:00 [INF] Request finished in 7.5044ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:21:51.693 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:21:51.696 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:21:51.697 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:21:51.697 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:21:52.024 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:21:52.029 +03:00 [INF] Executed ViewResult - view Index executed in 5.589ms.
+2022-06-13 12:21:52.030 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 332.2706ms
+2022-06-13 12:21:52.030 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:21:52.031 +03:00 [INF] Request finished in 338.1726ms 200 text/html; charset=utf-8
+2022-06-13 12:21:52.044 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:21:52.044 +03:00 [INF] Request finished in 0.5063ms 200 application/javascript; charset=utf-8
+2022-06-13 12:21:52.050 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:21:52.056 +03:00 [INF] Request finished in 5.3416ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:22:08.044 +03:00 [INF] Starting Web Host
+2022-06-13 12:22:08.932 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:22:09.130 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:22:09.130 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:22:09.130 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:22:09.155 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:22:09.198 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:22:09.226 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:22:09.254 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:22:10.028 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:22:10.190 +03:00 [INF] Executed ViewResult - view Index executed in 165.7751ms.
+2022-06-13 12:22:10.196 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 940.8199ms
+2022-06-13 12:22:10.198 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:22:10.220 +03:00 [INF] Request finished in 1066.3873ms 200 text/html; charset=utf-8
+2022-06-13 12:22:10.253 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:22:10.269 +03:00 [INF] Request finished in 15.2714ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:22:10.303 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:22:10.305 +03:00 [INF] Request finished in 2.1369ms 200 application/javascript; charset=utf-8
+2022-06-13 12:22:11.330 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/User  
+2022-06-13 12:22:11.335 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:22:11.336 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.UserController.Index (BootcampFinal.Web)'
+2022-06-13 12:22:11.337 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.UserController (BootcampFinal.Web).
+2022-06-13 12:22:11.693 +03:00 [INF] Entity Framework Core 3.1.25 initialized 'BootcampFinalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-06-13 12:22:12.079 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[IsActive], [u].[Name], [u].[Password], [u].[RegisterTime], [u].[Surname]
+FROM [Users] AS [u]
+2022-06-13 12:22:12.132 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:22:12.152 +03:00 [INF] Executed ViewResult - view Index executed in 20.3527ms.
+2022-06-13 12:22:12.152 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.UserController.Index (BootcampFinal.Web) in 815.3428ms
+2022-06-13 12:22:12.152 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.UserController.Index (BootcampFinal.Web)'
+2022-06-13 12:22:12.156 +03:00 [INF] Request finished in 825.842ms 200 text/html; charset=utf-8
+2022-06-13 12:22:12.172 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:22:12.173 +03:00 [INF] Request finished in 1.4131ms 200 application/javascript; charset=utf-8
+2022-06-13 12:22:12.182 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:22:12.191 +03:00 [INF] Request finished in 9.3683ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:22:17.666 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:22:17.672 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:22:17.673 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:22:17.674 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:22:17.675 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:22:17.698 +03:00 [INF] Executed ViewResult - view Search executed in 23.0605ms.
+2022-06-13 12:22:17.698 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 23.7346ms
+2022-06-13 12:22:17.698 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:22:17.699 +03:00 [INF] Request finished in 35.9515ms 200 text/html; charset=utf-8
+2022-06-13 12:22:17.717 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:22:17.718 +03:00 [INF] Request finished in 1.0671ms 200 application/javascript; charset=utf-8
+2022-06-13 12:22:17.728 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:22:17.733 +03:00 [INF] Request finished in 5.5926ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:22:33.585 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 196
+2022-06-13 12:22:33.589 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:22:33.590 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:22:33.606 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:22:34.355 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:22:34.366 +03:00 [INF] Executed ViewResult - view Index executed in 11.9324ms.
+2022-06-13 12:22:34.367 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 759.6815ms
+2022-06-13 12:22:34.367 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:22:34.369 +03:00 [INF] Request finished in 784.9621ms 200 text/html; charset=utf-8
+2022-06-13 12:22:34.382 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:22:34.383 +03:00 [INF] Request finished in 0.681ms 200 application/javascript; charset=utf-8
+2022-06-13 12:22:34.398 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:22:34.403 +03:00 [INF] Request finished in 4.7799ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:24:56.303 +03:00 [INF] Starting Web Host
+2022-06-13 12:24:57.317 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:24:57.523 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:24:57.523 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:24:57.523 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:24:57.551 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:24:57.597 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:24:57.626 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:24:57.653 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:24:58.350 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:24:58.498 +03:00 [INF] Executed ViewResult - view Index executed in 149.6542ms.
+2022-06-13 12:24:58.502 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 848.7211ms
+2022-06-13 12:24:58.503 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:24:58.530 +03:00 [INF] Request finished in 981.7869ms 200 text/html; charset=utf-8
+2022-06-13 12:24:58.569 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:24:58.585 +03:00 [INF] Request finished in 16.0065ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:24:58.611 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:24:58.614 +03:00 [INF] Request finished in 2.995ms 200 application/javascript; charset=utf-8
+2022-06-13 12:26:31.404 +03:00 [INF] Starting Web Host
+2022-06-13 12:26:32.345 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:26:32.552 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:26:32.553 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:26:32.553 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:26:32.578 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:26:32.626 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:26:32.660 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:26:32.691 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:26:33.548 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:26:33.696 +03:00 [INF] Executed ViewResult - view Index executed in 150.1342ms.
+2022-06-13 12:26:33.700 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 1007.8084ms
+2022-06-13 12:26:33.701 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:26:33.722 +03:00 [INF] Request finished in 1146.4491ms 200 text/html; charset=utf-8
+2022-06-13 12:26:33.812 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:26:33.812 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:26:33.819 +03:00 [INF] Request finished in 6.696ms 200 application/javascript; charset=utf-8
+2022-06-13 12:26:33.831 +03:00 [INF] Request finished in 18.7886ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:26:34.769 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:26:34.772 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:26:34.772 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:26:34.775 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:26:34.776 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:26:34.797 +03:00 [INF] Executed ViewResult - view Search executed in 21.8167ms.
+2022-06-13 12:26:34.797 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 22.4756ms
+2022-06-13 12:26:34.798 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:26:34.799 +03:00 [INF] Request finished in 30.5241ms 200 text/html; charset=utf-8
+2022-06-13 12:26:34.814 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:26:34.815 +03:00 [INF] Request finished in 0.6639ms 200 application/javascript; charset=utf-8
+2022-06-13 12:26:34.822 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:26:34.837 +03:00 [INF] Request finished in 15.1283ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:26:36.513 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 196
+2022-06-13 12:26:36.518 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:26:36.519 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:26:36.526 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:26:37.264 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:26:37.274 +03:00 [INF] Executed ViewResult - view Index executed in 10.3657ms.
+2022-06-13 12:26:37.274 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 747.9354ms
+2022-06-13 12:26:37.274 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:26:37.276 +03:00 [INF] Request finished in 763.8153ms 200 text/html; charset=utf-8
+2022-06-13 12:26:37.289 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:26:37.290 +03:00 [INF] Request finished in 1.1711ms 200 application/javascript; charset=utf-8
+2022-06-13 12:26:37.299 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:26:37.303 +03:00 [INF] Request finished in 4.2037ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:28:21.225 +03:00 [INF] Starting Web Host
+2022-06-13 12:28:22.174 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:28:22.378 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:28:22.379 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:28:22.379 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:28:22.404 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:28:22.447 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:28:22.479 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:28:22.507 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:28:23.194 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:28:23.356 +03:00 [INF] Executed ViewResult - view Index executed in 166.5847ms.
+2022-06-13 12:28:23.361 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 853.6315ms
+2022-06-13 12:28:23.362 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:28:23.394 +03:00 [INF] Request finished in 991.8769ms 200 text/html; charset=utf-8
+2022-06-13 12:28:23.490 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:28:23.490 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:28:23.493 +03:00 [INF] Request finished in 3.1221ms 200 application/javascript; charset=utf-8
+2022-06-13 12:28:23.511 +03:00 [INF] Request finished in 21.1225ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:28:24.578 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:28:24.585 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:28:24.587 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:28:24.589 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:28:24.590 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:28:24.613 +03:00 [INF] Executed ViewResult - view Search executed in 22.6838ms.
+2022-06-13 12:28:24.613 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 23.9376ms
+2022-06-13 12:28:24.614 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:28:24.615 +03:00 [INF] Request finished in 36.8648ms 200 text/html; charset=utf-8
+2022-06-13 12:28:24.631 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:28:24.632 +03:00 [INF] Request finished in 1.4354ms 200 application/javascript; charset=utf-8
+2022-06-13 12:28:24.643 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:28:24.651 +03:00 [INF] Request finished in 8.0975ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:28:26.647 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 196
+2022-06-13 12:28:26.651 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:28:26.652 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:28:26.663 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:28:27.445 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:28:27.454 +03:00 [INF] Executed ViewResult - view Index executed in 10.2962ms.
+2022-06-13 12:28:27.455 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 791.7591ms
+2022-06-13 12:28:27.455 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:28:27.457 +03:00 [INF] Request finished in 810.7506ms 200 text/html; charset=utf-8
+2022-06-13 12:28:27.469 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:28:27.470 +03:00 [INF] Request finished in 0.8163ms 200 application/javascript; charset=utf-8
+2022-06-13 12:28:27.479 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:28:27.484 +03:00 [INF] Request finished in 5.7869ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:30:08.155 +03:00 [INF] Starting Web Host
+2022-06-13 12:30:09.107 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-13 12:30:09.331 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-13 12:30:09.331 +03:00 [INF] Hosting environment: Development
+2022-06-13 12:30:09.331 +03:00 [INF] Content root path: C:\Bootcamp\SanTSG Final Project\SanTsgBootcampFinal\BootcampFinal.Web
+2022-06-13 12:30:09.354 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/  
+2022-06-13 12:30:09.398 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:30:09.430 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:30:09.460 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BootcampFinal.Web.Controllers.HomeController (BootcampFinal.Web).
+2022-06-13 12:30:10.113 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:30:10.272 +03:00 [INF] Executed ViewResult - view Index executed in 164.3886ms.
+2022-06-13 12:30:10.277 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web) in 817.2708ms
+2022-06-13 12:30:10.278 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HomeController.Index (BootcampFinal.Web)'
+2022-06-13 12:30:10.306 +03:00 [INF] Request finished in 954.2355ms 200 text/html; charset=utf-8
+2022-06-13 12:30:10.415 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:30:10.415 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:30:10.418 +03:00 [INF] Request finished in 3.0119ms 200 application/javascript; charset=utf-8
+2022-06-13 12:30:10.432 +03:00 [INF] Request finished in 17.2593ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:30:11.078 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/Hotel/Search  
+2022-06-13 12:30:11.084 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:30:11.085 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:30:11.086 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search() on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:30:11.087 +03:00 [INF] Executing ViewResult, running view Search.
+2022-06-13 12:30:11.111 +03:00 [INF] Executed ViewResult - view Search executed in 24.0169ms.
+2022-06-13 12:30:11.111 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 24.6354ms
+2022-06-13 12:30:11.111 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:30:11.112 +03:00 [INF] Request finished in 34.8227ms 200 text/html; charset=utf-8
+2022-06-13 12:30:11.127 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:30:11.128 +03:00 [INF] Request finished in 0.5984ms 200 application/javascript; charset=utf-8
+2022-06-13 12:30:11.136 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:30:11.143 +03:00 [INF] Request finished in 6.8917ms 200 text/javascript; charset=UTF-8
+2022-06-13 12:30:12.817 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44366/Hotel/Search application/x-www-form-urlencoded 196
+2022-06-13 12:30:12.821 +03:00 [WRN] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2022-06-13 12:30:12.823 +03:00 [INF] Executing endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:30:12.831 +03:00 [INF] Route matched with {action = "Search", controller = "Hotel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Search(System.String) on controller BootcampFinal.Web.Controllers.HotelController (BootcampFinal.Web).
+2022-06-13 12:30:13.573 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-13 12:30:13.582 +03:00 [INF] Executed ViewResult - view Index executed in 9.7467ms.
+2022-06-13 12:30:13.583 +03:00 [INF] Executed action BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web) in 751.5371ms
+2022-06-13 12:30:13.583 +03:00 [INF] Executed endpoint 'BootcampFinal.Web.Controllers.HotelController.Search (BootcampFinal.Web)'
+2022-06-13 12:30:13.585 +03:00 [INF] Request finished in 768.1545ms 200 text/html; charset=utf-8
+2022-06-13 12:30:13.598 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js  
+2022-06-13 12:30:13.598 +03:00 [INF] Request finished in 0.8996ms 200 application/javascript; charset=utf-8
+2022-06-13 12:30:13.608 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44366/_vs/browserLink  
+2022-06-13 12:30:13.612 +03:00 [INF] Request finished in 4.0743ms 200 text/javascript; charset=UTF-8

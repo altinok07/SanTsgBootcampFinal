@@ -1,0 +1,38 @@
+﻿@model List<BootcampFinal.Domain.HotelProducts.HotelProduct>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h1>Oteller</h1>
+<hr />
+
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th>#</th>
+        <th>Hotel Id</th>
+        <th>HotelName</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Otel Detayları</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var otel in Model )
+    {
+        <tr>
+            <th scope="row"></th>
+            <td>@otel.HotelId</td>
+            <td>@otel.HotelName</td>
+            <td>@otel.Country</td>
+            <td>@otel.City</td>
+            <td><button>Detay</button></td>
+        </tr>
+    }
+
+    </tbody>
+</table>
