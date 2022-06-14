@@ -30,7 +30,11 @@
             <td>@otel.HotelName</td>
             <td>@otel.Country</td>
             <td>@otel.City</td>
-            <td><button>Detay</button></td>
+            <td>
+                <button>
+                    <a asp-controller="Hotel" asp-action="HotelDetails" asp-route-id="@otel.HotelId">Detaylar</a>
+                </button>
+            </td>
         </tr>
     }
 

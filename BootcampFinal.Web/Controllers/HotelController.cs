@@ -33,5 +33,23 @@ namespace BootcampFinal.Web.Controllers
 
             return View("Index", tempDataHotels);
         }
+
+
+        [HttpGet]
+        public IActionResult HotelDetails(int id)
+        {
+            string token = _tourvisioApiService.GetAccessToken();
+            var hotelDetails = _tourvisioApiService.GetHotelDetails(id, token);
+
+            if (hotelDetails == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return View(hotelDetails);
+            }
+            
+        }
     }
 }
